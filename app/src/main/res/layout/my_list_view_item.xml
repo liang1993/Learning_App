@@ -9,5 +9,6 @@
         android:layout_height="50dp"
         android:layout_centerVertical="true"
         android:gravity="left|center_vertical"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:text="@string/hello_world"/>
 </RelativeLayout>
