@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Learning App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="swipe_name">swipe_refresh_demo</string>
+    <string name="count_view">count_view_demo</string>
+    <string name="wrong_layout">wrong layout id</string>
+
+</resources>
