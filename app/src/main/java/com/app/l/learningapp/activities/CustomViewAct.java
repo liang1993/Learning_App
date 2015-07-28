@@ -10,9 +10,14 @@ import com.app.l.learningapp.R;
  */
 public class CustomViewAct extends Activity {
 
+    private int layoutId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getIntent().getIntExtra("layout", R.layout.wrong_layout));
+
+        layoutId = getIntent().getIntExtra("layout", R.layout.wrong_layout);
+
+        setContentView(layoutId);
     }
 }

@@ -7,5 +7,7 @@
     <string name="swipe_name">swipe_refresh_demo</string>
     <string name="count_view">count_view_demo</string>
     <string name="wrong_layout">wrong layout id</string>
-
+    <string name="back">back</string>
+    <string name="title_view_title">this is title</string>
+    <string name="title_view">title view demo</string>
 </resources>

@@ -13,6 +13,7 @@ import java.util.jar.Attributes;
 /**
  * Created by liang on 15/7/28.
  * 自定义计数器view
+ * 自绘控件的范例
  */
 public class MyView extends View implements View.OnClickListener {
 
@@ -35,7 +36,7 @@ public class MyView extends View implements View.OnClickListener {
         mPaint.setColor(Color.BLUE);
         canvas.drawRect(0, 0, getWidth(), getHeight(), mPaint);
         mPaint.setColor(Color.YELLOW);
-        mPaint.setTextSize(30);
+        mPaint.setTextSize(60);
         String text = String.valueOf(mCount);
         mPaint.getTextBounds(text, 0, text.length(), mBounds);
         float textWidth = mBounds.width();

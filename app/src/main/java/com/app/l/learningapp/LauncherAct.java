@@ -8,16 +8,17 @@ import android.widget.Button;
 
 import com.app.l.learningapp.activities.CustomViewAct;
 import com.app.l.learningapp.activities.SwipeRefreshAct;
-import com.app.l.learningapp.utils.MyLog;
 
 /**
  * Created by liang on 15/7/28.
  */
 public class LauncherAct extends Activity implements View.OnClickListener {
 
-    private Button swipeButton, countViewButton;
+    private Button swipeButton, countViewButton, titleViewButton;
 
     private Intent intent;
+
+    private final String INTENTTAG = "layout";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,9 @@ public class LauncherAct extends Activity implements View.OnClickListener {
 
         countViewButton = (Button) findViewById(R.id.count_view);
         countViewButton.setOnClickListener(this);
+
+        titleViewButton = (Button) findViewById(R.id.title_view);
+        titleViewButton.setOnClickListener(this);
     }
 
     @Override
@@ -39,8 +43,11 @@ public class LauncherAct extends Activity implements View.OnClickListener {
                 break;
             case R.id.count_view:
                 intent = new Intent(this, CustomViewAct.class);
-                intent.putExtra("layout", R.layout.countview_layout);
+                intent.putExtra(INTENTTAG, R.layout.countview_layout);
                 break;
+            case R.id.title_view:
+                intent = new Intent(this, CustomViewAct.class);
+                intent.putExtra(INTENTTAG, R.layout.title_view_demo);
             default:
                 break;
         }
