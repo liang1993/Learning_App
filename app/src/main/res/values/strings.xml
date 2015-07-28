@@ -10,4 +10,6 @@
     <string name="back">back</string>
     <string name="title_view_title">this is title</string>
     <string name="title_view">title view demo</string>
+    <string name="my_list_view">my list view demo</string>
+    <string name="delete">delete</string>
 </resources>

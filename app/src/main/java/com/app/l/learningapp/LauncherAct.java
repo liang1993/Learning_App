@@ -14,7 +14,7 @@ import com.app.l.learningapp.activities.SwipeRefreshAct;
  */
 public class LauncherAct extends Activity implements View.OnClickListener {
 
-    private Button swipeButton, countViewButton, titleViewButton;
+    private Button swipeButton, countViewButton, titleViewButton,listViewButton;
 
     private Intent intent;
 
@@ -33,6 +33,9 @@ public class LauncherAct extends Activity implements View.OnClickListener {
 
         titleViewButton = (Button) findViewById(R.id.title_view);
         titleViewButton.setOnClickListener(this);
+
+        listViewButton = (Button)findViewById(R.id.my_list_view);
+        listViewButton.setOnClickListener(this);
     }
 
     @Override
@@ -48,6 +51,9 @@ public class LauncherAct extends Activity implements View.OnClickListener {
             case R.id.title_view:
                 intent = new Intent(this, CustomViewAct.class);
                 intent.putExtra(INTENTTAG, R.layout.title_view_demo);
+            case R.id.my_list_view:
+                intent = new Intent(this, CustomViewAct.class);
+                intent.putExtra(INTENTTAG,R.layout.mylistview_demo_layout);
             default:
                 break;
         }

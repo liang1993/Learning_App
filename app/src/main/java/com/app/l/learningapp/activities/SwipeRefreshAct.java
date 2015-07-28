@@ -11,14 +11,17 @@ import com.app.l.learningapp.R;
 
 import java.util.ArrayList;
 
-
+/**
+ * Created by liang on 15/7/28.
+ * SwipeRefreshlayout使用范例
+ */
 public class SwipeRefreshAct extends Activity implements SwipeRefreshLayout.OnRefreshListener {
 
     private SwipeRefreshLayout swipeRefreshLayout;
 
     private ListView listView;
 
-    private ArrayList<String> list = new ArrayList<String>();
+    private ArrayList<String> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,7 @@ public class SwipeRefreshAct extends Activity implements SwipeRefreshLayout.OnRe
                 android.R.color.holo_red_light);
 
         listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, getData()));
+        listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, getData()));
 
     }
 
