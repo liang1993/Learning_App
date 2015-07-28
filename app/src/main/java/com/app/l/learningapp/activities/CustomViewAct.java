@@ -30,8 +30,8 @@ public class CustomViewAct extends Activity {
         layoutId = getIntent().getIntExtra("layout", R.layout.wrong_layout);
 
         setContentView(layoutId);
-        if(layoutId == R.layout.mylistview_demo_layout){
-            myListView = (MyListView)findViewById(R.id.my_list_view);
+        if (layoutId == R.layout.mylistview_demo_layout) {
+            myListView = (MyListView) findViewById(R.id.my_list_view);
             initList();
             myListView.setOndeleteListener(new MyListView.OnDeleteListener() {
                 @Override
@@ -40,12 +40,12 @@ public class CustomViewAct extends Activity {
                     mAdapter.notifyDataSetChanged();
                 }
             });
-            mAdapter = new MyListViewAd(this, 0,contentList);
+            mAdapter = new MyListViewAd(this, 0, contentList);
             myListView.setAdapter(mAdapter);
         }
     }
 
-    private void initList(){
+    private void initList() {
         contentList.add("Content Item 1");
         contentList.add("Content Item 2");
         contentList.add("Content Item 3");
