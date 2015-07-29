@@ -4,27 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/swipe_refresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/swipe_name" />
+    <!-- ToolBar -->
+    <include layout="@layout/toolbar_layout" />
+    <!-- DrawerLayout -->
+    <include layout="@layout/drawer_layout" />
 
-    <Button
-        android:id="@+id/count_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/count_view" />
 
-    <Button
-        android:id="@+id/title_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_view" />
-
-    <Button
-        android:id="@+id/my_list_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/my_list_view" />
 </LinearLayout>

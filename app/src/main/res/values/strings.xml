@@ -12,4 +12,6 @@
     <string name="title_view">title view demo</string>
     <string name="my_list_view">my list view demo</string>
     <string name="delete">delete</string>
+    <string name="draw_open">open</string>
+    <string name="draw_close">close</string>
 </resources>
