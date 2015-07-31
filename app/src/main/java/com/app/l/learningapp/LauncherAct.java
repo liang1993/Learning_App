@@ -20,7 +20,8 @@ import com.app.l.learningapp.activities.SwipeRefreshAct;
  */
 public class LauncherAct extends AppCompatActivity implements View.OnClickListener {
 
-    private Button swipeButton, countViewButton, titleViewButton,listViewButton;
+    private Button swipeButton, countViewButton, titleViewButton,listViewButton
+            ,frescoButton;
 
     private Intent intent;
 
@@ -79,7 +80,8 @@ public class LauncherAct extends AppCompatActivity implements View.OnClickListen
         listViewButton = (Button)findViewById(R.id.my_list_view);
         listViewButton.setOnClickListener(this);
 
-
+        frescoButton = (Button)findViewById(R.id.fresco_demo);
+        frescoButton.setOnClickListener(this);
     }
 
     @Override
@@ -98,6 +100,9 @@ public class LauncherAct extends AppCompatActivity implements View.OnClickListen
             case R.id.my_list_view:
                 intent = new Intent(this, CustomViewAct.class);
                 intent.putExtra(INTENTTAG,R.layout.mylistview_demo_layout);
+            case R.id.fresco_demo:
+                intent = new Intent(this,CustomViewAct.class);
+                intent.putExtra(INTENTTAG,R.layout.fresco_demo_layout);
             default:
                 break;
         }

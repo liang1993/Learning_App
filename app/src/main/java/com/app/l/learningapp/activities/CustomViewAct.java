@@ -1,11 +1,13 @@
 package com.app.l.learningapp.activities;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.app.l.learningapp.R;
 import com.app.l.learningapp.customview.mylistview.MyListView;
 import com.app.l.learningapp.customview.mylistview.MyListViewAd;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +44,11 @@ public class CustomViewAct extends Activity {
             });
             mAdapter = new MyListViewAd(this, 0, contentList);
             myListView.setAdapter(mAdapter);
+        } else if (layoutId == R.layout.fresco_demo_layout) {
+            //fresco demo
+            SimpleDraweeView draweeView = (SimpleDraweeView)findViewById(R.id.my_image_view);
+            Uri uri = Uri.parse("https://raw.githubusercontent.com/facebook/fresco/gh-pages/static/fresco-logo.png");
+            draweeView.setImageURI(uri);
         }
     }
 
