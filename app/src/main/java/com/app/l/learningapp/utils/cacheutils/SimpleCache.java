@@ -34,7 +34,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by liang on 15/8/18.
- * 参考了ASimpleCache,了解了Android缓存框架的整体功能和结构
+ * 参考了ASimpleCache,了解了实现一个Android缓存框架的需要实现的功能和结构
  */
 public class SimpleCache {
     public static final int TIME_HOUR = 60 * 60;
